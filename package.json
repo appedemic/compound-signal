@@ -1,0 +1,28 @@
+{
+    "name" : "compound-signal",
+    "description" : "Dispatch after multiple signals are triggered",
+    "keywords" : ["js-signals", "signals", "pub/sub", "event", "publish", "subscribe", "observer", "when", "deferred", "promises"],
+    "homepage" : "https://github.com/appedemic/compound-signal/",
+    "version" : "0.0.1",
+    "author" : {
+        "name" : "Derk Bell",
+        "url" : "http://appedemic.nl/"
+    },
+    "repository" : {
+        "type" : "git",
+        "url" : "https://github.com/appedemic/compound-signal.git"
+    },
+    "main" : "dist/compound.js",
+    "bugs" : {
+        "url" : "https://github.com/appedemic/compound-signal/issues"
+    },
+    "licenses" : [
+        {
+            "type" : "MIT",
+            "url" : "http://www.opensource.org/licenses/mit-license.php"
+        }
+    ],
+    "dependencies" : {
+        "signals" : ">=1.0.0"
+    }
+}
