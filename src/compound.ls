@@ -3,8 +3,16 @@ Signal = require \signals
 class CompoundSignal extends Signal
   (...signals) ->
     super!
+
     @counter = signals.length
-    @callback = -> @dispatch! if --@counter is 0
-    [signal.add-once @callback, @ for signal in signals]
+    @results = []
+
+    for signal, index in signals
+      signal.add-once @callback(index), @
+
+  callback: (index) ->
+    (...args) ->
+      @results[index] = args
+      @dispatch ...@results if --@counter is 0
 
 module.exports = CompoundSignal

@@ -3,7 +3,7 @@
     "description" : "Dispatch after multiple signals are triggered",
     "keywords" : ["js-signals", "signals", "pub/sub", "event", "publish", "subscribe", "observer", "when", "deferred", "promises"],
     "homepage" : "https://github.com/appedemic/compound-signal/",
-    "version" : "0.0.1",
+    "version" : "0.0.2",
     "author" : {
         "name" : "Derk Bell",
         "url" : "http://appedemic.nl/"
